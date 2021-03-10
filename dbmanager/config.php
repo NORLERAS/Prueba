@@ -1,8 +1,8 @@
 <?php
-define('USER','root');
-define('PASSWORD','n0rl3ras');
-define('HOST','localhost');
-define('DATABASE','mexper');
+define('USER','uv7ypx6ohdrtfm1i');
+define('PASSWORD','m4D81lC0dmQ0Si0vVK5r');
+define('HOST','bvxmpll4hj0jha1zvqmw-mysql.services.clever-cloud.com');
+define('DATABASE','bvxmpll4hj0jha1zvqmw');
 
 $mysqli = new mysqli(HOST, USER, PASSWORD,DATABASE);
 if($mysqli->connect_errno){
