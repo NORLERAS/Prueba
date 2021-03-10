@@ -83,16 +83,16 @@
 
                       <p>
                           <label>Nombre(s)</label>
-                          <input type="text" name="fullname" id="fullname" required>
+                          <input type="text" name="fullname" id="fullname" required"" pattern="[A-Z]+">
                       </p>
                       <p>
                           <label>Apellido(s)</label>
-                          <input type="text" name="lastname" id="lastname" required>
+                          <input type="text" name="lastname" id="lastname" required"" pattern="[A-Z]+">
                       </p>
 
                       <p>
                           <label>Teléfono</label>
-                          <input type="cel" name="phone" id="phone" required>
+                          <input maxlength="10" minlength="8" type="cel" name="phone" id="phone" required="" pattern="[0-9]+">
                       </p>
 
                         <p>
