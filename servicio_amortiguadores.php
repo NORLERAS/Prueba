@@ -79,7 +79,7 @@
                           </div>
                           <div class="data">
                             <label>Teléfono</label>
-                            <input type="cel" name="phone" id="phone" required="" pattern="[0-9]+">
+                            <input  maxlength="10" minlength="8" type="cel" name="phone" id="phone" required="" pattern="[0-9]+">
                           </div>
                  <textarea name="message" id="message" rows="8" cols="40" placeholder="Escriba su mensaje" required></textarea>
                 <div class="btn">
