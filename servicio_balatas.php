@@ -66,7 +66,7 @@
                 <form action="cotizacion_balatas.php" method="POST">
                           <div class="data">
                             <label>Nombre Completo</label>
-                            <input type="text" name="fullname" id="fullname" placeholder="Nombre y Apellido" required="" pattern="[ -A-Z]+">
+                            <input type="text" name="fullname" id="fullname" placeholder="Nombre y Apellido" required="" pattern="[A-Z]+">
                           </div>
                           <div class="data">
                             <label>Email</label>
