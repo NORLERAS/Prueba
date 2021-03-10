@@ -67,7 +67,7 @@
                 <form action="cotizacion_amortiguadores.php" method="POST">
                           <div class="data">
                             <label>Nombre</label>
-                            <input type="text" name="fullname" id="fullname" placeholder="Nombre y Apellido" required="" pattern="[a-z-A-Z]+">
+                            <input type="text" name="fullname" id="fullname" placeholder="Nombre y Apellido" required="" pattern="[A-Z]+">
                           </div>
                           <div class="data">
                             <label>Email</label>
