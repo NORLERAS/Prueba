@@ -1,0 +1,146 @@
+.main {
+  padding-top: 11rem; /*Espacio del header y del texto de abajo*/
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.container1{
+	position: relative;
+	width: 1000px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: auto;
+	text-align: justify;
+}
+
+.container1 .card1{
+	position: relative;
+	height: 250px;
+	background: #fff;
+	display: flex;
+	width: 45%;
+	margin: 30px 0;
+}
+
+.container1 .card1 .imgBx{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff; /*FONDO GRIS ANTES DEL MOUSE*/
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	transition: 0.5s ease-in-out;
+	border-radius: 10px;
+}
+
+.container1 .card1:hover .imgBx{
+	width: 150px;
+	height: 150px;
+	left: -75px;
+	top: calc(50% - 75px);
+	transition: 0.5s ease-in-out;
+	background: #BFC9CA;  /*COLOR IMAGEN MINIATURA AL PASAR MOUSE*/
+}
+
+.container1 .card1 .imgBx:before{
+	content: attr(data-text);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.9em;
+	color: rgb(191, 201, 202); /*COLOR TEXTO RECUADRO ANTES DEL MOUSE*/
+	font-weight: 700;
+	top: 80%;
+	right: 10%;
+}
+
+.container1 .card1 .imgBx img{
+	max-width: 100px;
+	transition: 0.5s ease-in-out;
+}
+
+.container1 .card1:hover .imgBx img{ /*EFECTO REDUCION AL PASAR EL MOUSE*/
+	max-width: 75px;
+}
+
+.container1 .card1 .content1{ /*DESAPARECE LETRAS AL PASAR EL MOUSE*/
+	position: absolute;
+	right: 0;
+	width: calc(100% - 75px);
+	height: 100%;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container1 .card1 .content1 h3{
+	margin-bottom: 5px;
+	font-size: 24px;
+}
+
+.container1 .card1 .content1 a{
+	display: inline-block;
+	margin-top: 10px;
+	padding: 5px 10px;
+	background: #333;
+	text-decoration: none;
+	color: #fff;
+}
+@media (max-width: 992px){
+	.container1{
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+	}
+	.container1 .card1{
+		width: 400px;
+	}
+}
+
+@media (max-width: 768px){
+	.container1 .card1{
+		max-width: 300px;
+		flex-direction: column;
+		height: auto;
+	}
+
+	.container1 .card1 .imgBx{
+		position: relative;
+	}
+
+	.container1 .card1 .imgBx,
+	.container1 .card1:hover .imgBx{
+		width: 100%;
+		height: 200px;
+		left: 0;
+	}
+
+	.container1 .card1 .imgBx img,
+	.container1 .card1:hover .imgBx img{
+		max-width: 100px;
+	}
+
+	.container1 .card1 .content1{
+		position: relative;
+		width: 100%;
+	}
+}

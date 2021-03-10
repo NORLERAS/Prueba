@@ -1,0 +1,121 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"); /* eto se copia y se pega en todos los CSS*/
+/*===== VARIABLES CSS =====*/
+
+body {
+	margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+	background: #fff;
+}
+
+h3 {
+	color: #D10606;
+}
+
+a {
+  --body-font: 'Poppins', sans-serif; /* eto se copia y se pega en todos los CSS*/
+  --normal-font-size: .945rem; /* eto se copia y se pega en todos los CSS*/
+  --small-font-size: .820rem; /* eto se copia y se pega en todos los CSS*/
+  --normal-font-size: 1rem; /* eto se copia y se pega en todos los CSS*/
+  --small-font-size: .875rem; 		 /* eto se copia y se pega en todos los CSS*/
+  color: #1e1e1e;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.box-shadow,
+.paralax-mf,
+.service-box,
+.work-box,
+.card-blog {
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.4);
+}
+
+/*--/ Sections /--*/ /*--/ SEPARAR ARRIBA Y ABAJO /--*/
+
+.main {
+  padding-top: 7rem; /*Espacio del header y del texto de abajo*/
+}
+
+/*--/ Title A /--*/
+
+.title-box {
+  margin-bottom: 4rem;
+}
+
+.title-a {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.subtitle-a { /*Encuentra aqui los mejores productos de accesorios para vehiculos.*/
+  color: #4e4e4e;
+}
+
+.line-mf {
+  width: 45px;
+  height: 4px;
+  background-color: #000;
+  margin: 0 auto;
+}
+
+/*======================================
+//--//-->   tarjetas
+======================================*/
+
+.card-blog .card-body {
+  position: relative;
+}
+
+.card-blog .card-category-box { /*posicion de los precios */
+  position: absolute;
+  text-align: center;
+  top: -16px;
+  left: 15px;
+  right: 15px;
+  line-height: 25px;
+  overflow: hidden;
+}
+
+.card-blog .card-category { /*cajas de los precios */
+  display: inline-block;
+  color: #fff;
+  padding: 0 15px 5px;
+  overflow: hidden;
+  background-color: #D10606;
+  border-radius: 4px;
+}
+
+.card-blog .card-category .category { /*color de los precios */
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: .1px;
+  margin-bottom: 0;
+}
+
+.card-blog .card-title {
+  font-size: 1.3rem;
+  margin-top: .6rem;
+}
+
+@media (min-width: 767px) {
+  .card-blog {
+    margin-bottom: 3rem;
+  }
+
+.link{
+	color:#fff;
+}

@@ -1,0 +1,92 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"); /* eto se copia y se pega en todos los CSS*/
+/*===== VARIABLES CSS =====*/
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #fff;
+	--body-font: 'Poppins', sans-serif; /* eto se copia y se pega en todos los CSS*/
+	--normal-font-size: .945rem; /* eto se copia y se pega en todos los CSS*/
+	--small-font-size: .820rem; /* eto se copia y se pega en todos los CSS*/
+	--normal-font-size: 1rem; /* eto se copia y se pega en todos los CSS*/
+	--small-font-size: .875rem; 		 /* eto se copia y se pega en todos los CSS*/
+	color: #000;  /*color de las cajas*/
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+}
+
+p, ol, ul {
+	margin-top: 0px;
+}
+
+p {
+	line-height: 150%;
+}
+
+.img1 {
+	height: 400px;
+	width: 400px;
+}
+
+/** PAGE */
+#page {
+	overflow: hidden;
+	padding: 5em 0em 0em 0em;
+}
+
+/** CONTENT */
+#content {
+	float: left;
+	width: 800px;
+}
+
+.post { /*borde del cuadro*/
+	overflow: hidden;
+	padding: 50px 50px 30px 50px;
+	margin-bottom: 40px;
+	border: 1px solid #D10606; /*color del borde de las cajas*/
+	border-radius: 8px;
+	background-color: rgba(255,255,255);
+}
+
+.post a
+{
+	color: #D10606; /*mexper Friction*/
+}
+
+.post .title {
+	padding: 7px 0px 0px 0px;
+	letter-spacing: -1px;
+}
+
+.post .title a {
+	border: none;
+	font-size: 1.5em;
+	letter-spacing: -2px;
+	text-decoration: none;
+	font-weight: 400;
+	color: #D10606;
+}
+
+.post .meta {
+	margin-bottom: 30px;
+	padding: 10px 0px 0px 0px;
+	text-align: left;
+	font-weight: 300;
+}
+
+.post .meta .posted {
+	float: right;
+}
+
+.post .entry {
+	padding: 0px 0px 35px 0px;
+	text-align: justify;
+}

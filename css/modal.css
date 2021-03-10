@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+button {
+  background-color: #2B8DFF;
+  border: 0;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 14px;
+  padding: 9px 20px;
+}
